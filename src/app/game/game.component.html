@@ -1,0 +1,28 @@
+<div class="gameField">
+  <div class="2q2">
+    <img
+      ngFor="let c of [0, 1, 2, 3]; let i = index"
+      ngStyle="{ 'right.px': i * 5 }"
+      src="/assets/img/cards/card_cover.png"
+      alt=""
+    />
+
+    <!-- Cover Card-->
+    <img
+      (click)="pickCard()"
+      class="topCard"
+      style="right: 25px"
+      src="/assets/img/cards/card_cover.png"
+      alt=""
+    />
+
+    <img
+      (click)="pickCard()"
+      ngIf="pickCardAnimation"
+      class="pickCard"
+      style="right: 25px"
+      src="/assets/img/cards/spade_1.png"
+      alt=""
+    />
+  </div>
+</div>

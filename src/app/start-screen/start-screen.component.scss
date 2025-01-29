@@ -1,0 +1,33 @@
+.startScreen {
+  background-color: #404040;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 100%;
+  }
+}
+
+.startLBLBox {
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 40vw;
+    height: auto;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(1.25);
+    }
+  }
+}
