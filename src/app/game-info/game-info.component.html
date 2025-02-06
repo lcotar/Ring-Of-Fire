@@ -1,0 +1,10 @@
+<mat-card appearance="outlined"
+  ><mat-card-title>{{ card ? title : "Please pick a card" }}</mat-card-title>
+  <mat-card-content>
+    {{
+      card
+        ? description
+        : "Please click on hte card stack to stack to select the next card!"
+    }}
+  </mat-card-content>
+</mat-card>

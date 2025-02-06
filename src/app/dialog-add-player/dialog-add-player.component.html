@@ -10,10 +10,11 @@
   </div>
 
   <div mat-dialog-actions>
-    <button mat-button>No Thanks!</button>
+    <button mat-button (click)="onNoCLick()">No Thanks!</button>
     <button
       class="addBTN"
       mat-button
+      [disabled]="name.length == 0"
       [mat-dialog-close]="name"
       cdkFocusInitial
       (click)="onNoCLick()"
